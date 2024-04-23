@@ -13,7 +13,7 @@ chmod 755 startMonitor
 printf "#!/bin/bash\n" >> startMonitor
 printf "export DISPLAY=:0;\n" >> startMonitor
 printf "killall chromium-browser;\n" >> startMonitor
-printf "sleep 2;;\n" >> startMonitor
+printf "sleep 2;\n" >> startMonitor
 printf "chromium-browser -kiosk -private-window $2;\n" >> startMonitor
 
 
