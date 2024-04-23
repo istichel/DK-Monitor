@@ -6,6 +6,8 @@ sudo apt -y install chromium-browser;
 crontab -l > mycron
 printf "*/20 * * * * /home/$1/startMonitor &\n" >> mycron
 printf "15 3 * * * /usr/sbin/reboot &\n" >> mycron
+crontab mycron
+rm mycron
 
 ##start monitor
 touch startMonitor
