@@ -9,6 +9,11 @@ printf "15 3 * * * /usr/sbin/reboot &\n" >> mycron
 crontab mycron
 rm mycron
 
+##compatibel nur mit bullseyes
+xset s off
+xset s noblank
+xset -dpms
+
 ##start monitor
 touch startMonitor
 chmod 755 startMonitor
